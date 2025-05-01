@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/main.css">
+      <title>Life Expectancy Data</title>
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg bg-light navbar-light">
+        <div style="text-align: center;">
+            <img src="globe.webp" class="mr-2" style="width: 50px; height: 50px;">
+            <a class="navbar-brand" href="#">Life Expectancy Around the Globe!</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false" 
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+         <div class="collapse navbar-collapse" id="navbar-body">
+            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav ml-auto">
+               
+            </ul>
+         </div>
+      </nav>
+      <div class="container" id="bsr-wrapper">
+         <div class='my-5'></div>
+         <nav aria-label="breadcrumb">
+            <ol class="breadcrumb ">
+               <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+               
+            </ol>
+         </nav>
+         <div class="jumbotron">
+            <h1 class="display-4">Life Expectancy Knowledge!</h1>
+            <p class="lead">This website will allow you to explore life expectancy data from all around the globe! All visualizations were created from data contained in this <a href="https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who">dataset</a>. Life expectancy is more than just a number—it's a reflection of the health, well-being, and advancements of societies across the globe. It represents the average number of years a person is expected to live, based on current mortality rates. This metric has evolved dramatically over time, influenced by factors such as medical breakthroughs, lifestyle changes, and socioeconomic conditions. Understanding life expectancy helps us uncover disparities, celebrate progress, and address challenges in public health and policy. Scroll down to see some visualization on global life expectancy!</p>
+            <hr class="my-4">
+            <p>Looking for data on a specific continent? Click the button below!</p>
+            <a class="btn btn-primary btn-lg" href="Continents.html" role="button">Learn More on Continents</a>
+         </div>
+         
+         <h1>Life Expectancy Around the Globe!</h1>
+         <p>This visualization explores the life expactancy around the globe with a timelapse from 2015 to 2000. We can see that Canada actually higher a life expectancy in 2000 than it did in 2015. Additioanlly, the trend in central Africa has been that life expectancy has increased from 2000 to 2015. Last but not least European countries' life expectancies have remained relatively constant over the course of 15 years. </p>
+         <div class='my-5'></div>
+         <embed src="MainPage_GlobalLE.html"
+        type="text/html" height="700" width="1000" />
+         
+         <div class='py-3 my-4'></div>
+         <h1>Average Life Expectancies by Continent!</h1>
+         <p>This visualization explores the average life expactancy in each continent from 2000 to 2015. We can see that that Europe has the heightest average life expectancy at 77.4 years followed by North America at 73.78 years. Africa has the lowest average life expectancy at 58.61 years.</p>
+         <div class='my-5'></div>
+         <embed src="MainPage_AVGLEbyCont.html"
+        type="text/html" height="700" width="1000" />
+         <div class='py-3 my-4'></div>
+         <h1>Average Healthcare Spending by Continent!</h1>
+         <p>This visualization explores the average healthcare spending per capita in each continent from 2000 to 2015. We can see that Europe has the highest average healthcare spending per capita which correlates to its highest life expectancy as well. One point of interest is that Africa spends more on healthcare than Asia, however Asia still has a higher life expectancy (seen in the graph above).</p>
+         <div class='my-5'></div>
+         <embed src="MainPage_LEvsAvgHCS.html"
+        type="text/html" height="700" width="1000" />
+         <div class='py-3 my-4'></div>
+         <h1>Life Expectancy Distributions by Continent!</h1>
+         <p>This visualization explores the average life expectancy distribution in each continent with a timelapse from 2000 to 2015. We can see that Africa has the highest range in life expectancy which include two outlier countries with a high life expectancy in the year 2000. Additionally Europe tends to maintain the smallest range of life expectancies throughout the 15 years.</p>
+         <div class='my-5'></div>
+         <embed src="MainPage_LEvsContBox.html"
+        type="text/html" height="700" width="1000" />
+         <div class='py-3 my-4'></div>
+         <h1>GDP vs Life Expectancy by Continent!</h1>
+         <p>This visualization explores correlation between GDP per capita (USD) and Life Expectancy within each country divided by continents from 2000 to 2015. We can see that Europe has the highest range in GDP per capita of countries while Africa and South America have a considerably smaller range for the same metric. Additionally, countries with a GDP per capita of over 50k all have a life exectancy above 70 years old regardless of continet. Hover over a dot to see the country!</p>
+         <div class='my-5'></div>
+         <embed src="MainPage_LEvsGDPperCap_Cont.html"
+        type="text/html" height="700" width="1000" />
+         <div class='py-3 my-4'></div>
+         <h1>Healthcare Expenditure vs Life Expectancy by Continent!</h1>
+         <p>This visualization explores correlation between healthcare expenditure as a percentage of total government expenditure and Life Expectancy within each country divided by continents from 2000 to 2015. We can see that a higher health care expenditure in African countries does not have a noticeable effect on life exectancy, however in European countries life expectancy tends to increase with an increase in healthcare expenditure. Additionally we see that the United States has the highest healthcare expenditure, however it falls somewhere in the 80th to 90th percentile in life expectancy. Hover over a dot to see the country!</p>
+         <div class='my-5'></div>
+         <embed src="MainPage_LEvsHexp.html"
+        type="text/html" height="700" width="1000" />
+         <div class='py-3 my-4'></div>
+         <h1>Life Expectancy vs GDP per Capita by Country!</h1>
+         <p>This visualization explores correlation between GDP per capita (USD) and Life Expectancy within each country from 2000 to 2015. We can see that Luxembourg has maintained a higher GDP per capita while simultaneously maintaining a high life expectancy. We can also see that some of the highest life expectacnies come from countries with a low GDP per capita, but the trend appears to be that as GDP per capita increases so does life expectancy. Hover over a dot to see the country!</p>
+         <div class='my-5'></div>
+         <embed src="MainPage_LEvsGDPpercap_Country.html"
+        type="text/html" height="700" width="1000" />
+         <div class='py-3 my-4'></div>
+         <h1>Life Expectancy in Developed vs Undeveloped Countries!</h1>
+         <p>These visualizations explore the classification of developed vs undeveloped countries and the average Life Expectancy in each type from 2000 to 2015. We can see that Europe as the most developed countries, and that developed countries boast a higher life expectancy than developing countries by more than 12 years.</p>
+         <div class='my-5'></div>
+         <embed src="MainPage_DevelopingMap.html"
+        type="text/html" height="700" width="1000" />
+
+         <div class='py-3 my-4'></div>
+         <embed src="MainPage_DevVsUndev.html"
+        type="text/html" height="700" width="1000" />
+      </div>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script><script src="js/main.js"></script>
+   </body>
+</html>
